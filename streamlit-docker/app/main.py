@@ -82,7 +82,7 @@ clust_check = st.sidebar.checkbox("Show Clusters")
 if clust_check:
 
     st.subheader('Show Clustered Areas')
-    st.write(places)
+    st.dataframe(places)
 
     chart = st.sidebar.radio(
         'Country Cluster', ('Show graph', 'Show Pie char'))
